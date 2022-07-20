@@ -93,8 +93,23 @@
                         </ul>
                     </div>
                 </div>
-                <input type="button" class="btn btn-success w-100 fw-bold" value="Create account"
+
+{#                {% for field in registration_form %}#}
+{#                    <p>#}
+{#                        {% for error in field.error %}#}
+{#                            <p style="background-color: #b02a37">{{ error }}</p>#}
+{#                        {% endfor %}#}
+{#                    </p>#}
+{#                {% endfor %}#}
+{#                {% if registration_form.non_field_errors %}#}
+{#                    <div style="color: #b02a37">#}
+{#                        <p>{{ registration_form.non_field_errors }}</p>#}
+{#                    </div>#}
+{#                {% endif %}#}
+
+                <input type="submit" class="btn btn-success w-100 fw-bold" value="Create account"
                        style="background-color: #b02a37">
+
             </form>
 
         </div>
